@@ -8,11 +8,7 @@ export default function RequestFormButton() {
 
   return (
     <div>
-      <button style={buttonStyling}>
-        Click Here!
-      </button>
-      <input type="submit" value="Submit" />
-
+      <input style={buttonStyling} type='submit' value='Submit' />
     </div>
   );
 }
