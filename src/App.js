@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import StylesContext from "./StylesContext";
 
 import UserInterface from "./UserInterface"
 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <main>
+    <StylesContext.Provider value={stylin}>
      <h1
           style={{
             color: "#FEE001",
@@ -27,6 +29,7 @@ function App() {
           Welcome to Comics Galore!
         </h1>
         <UserInterface />
+        </StylesContext.Provider>
     </main>
   );
 }
